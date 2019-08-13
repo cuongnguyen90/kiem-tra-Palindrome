@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body  onload="isPalindrome(prompt('Nhap vao ki tu bat ki'))">
+<script>
+    function isPalindrome(text) {
+        len = Math.floor(text.length/2);
+        first = text.charAt(0);
+        last = text.charAt(text.length-1);
+        if (first == last){
+            for (i= 0;i< len;i ++ ){
+                if (text[i] !== text[text.length-i-1]){
+                    alert("Khong phai la chuoi Palindrome")
+                }else {
+                    alert("Day la chuoi Palindrome")
+                }
+            }
+        }else {
+            alert("Khong phai chuoi Palindrome");
+        }
+    }
+</script>
+</body>
+</html>
